@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valico — Una notte in alta quota</title>
+  <meta name="description" content="Survival alpino in prima persona, interamente in WebGL2 e JavaScript puro. Zero dipendenze.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="gl"></canvas>
+
+  <div id="hud" class="hidden">
+    <canvas id="compass" width="760" height="58"></canvas>
+    <div id="info"><span id="clock">--:--</span><span id="alt">-- m</span><span id="temp">-- °C</span></div>
+    <div id="objective"></div>
+    <div id="bars">
+      <div class="bar"><label>Calore</label><div class="track"><i id="barWarm"></i></div></div>
+      <div class="bar"><label>Fiato</label><div class="track"><i id="barStam"></i></div></div>
+      <div id="items"><span id="matches">4</span> fiammiferi · <span id="lampState">torcia accesa</span></div>
+    </div>
+    <div id="prompt"></div>
+    <div id="toast"></div>
+    <div id="note"></div>
+    <div id="frost"></div>
+    <div id="dark"></div>
+    <div id="crosshair"></div>
+  </div>
+
+  <div id="loader"><div><h1>VALICO</h1><p id="loadmsg">Generazione del terreno…</p></div></div>
+
+  <div id="menu" class="hidden">
+    <div class="panel">
+      <h1>VALICO</h1>
+      <h2 id="menuSub">Una notte in alta quota</h2>
+      <p id="menuText">Una tormenta ha sorpreso la tua cordata sul valico. Sei rimasto solo. Trova i cinque segnavia lasciati dalla squadra prima che il freddo ti fermi, poi torna al rifugio e aspetta l'alba.</p>
+      <div class="grid">
+        <div><b>W A S D</b><span>muoviti</span></div>
+        <div><b>Mouse</b><span>guarda</span></div>
+        <div><b>Maiusc</b><span>corri</span></div>
+        <div><b>C</b><span>abbassati</span></div>
+        <div><b>Spazio</b><span>salta</span></div>
+        <div><b>E</b><span>raccogli / apri</span></div>
+        <div><b>F</b><span>accendi un fuoco</span></div>
+        <div><b>L</b><span>torcia</span></div>
+        <div><b>R</b><span>segnale radio</span></div>
+        <div><b>Esc</b><span>pausa</span></div>
+      </div>
+      <div class="opts">
+        <span>Qualità</span>
+        <button class="q" data-q="alta">Alta</button>
+        <button class="q" data-q="media">Media</button>
+        <button class="q" data-q="bassa">Bassa</button>
+        <span>Audio</span>
+        <button id="muteBtn">Acceso</button>
+      </div>
+      <button id="startBtn" class="primary">Inizia</button>
+      <p class="credit">nowii-core · WebGL2 · zero dipendenze</p>
+    </div>
+  </div>
+
+  <div id="end" class="hidden">
+    <div class="panel">
+      <h1 id="endTitle"></h1>
+      <p id="endText"></p>
+      <div id="endStats"></div>
+      <button id="retryBtn" class="primary">Riprova</button>
+    </div>
+  </div>
+
+  <script src="js/util.js"></script>
+  <script src="js/world.js"></script>
+  <script src="js/shaders.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/play.js"></script>
+</body>
+</html>
