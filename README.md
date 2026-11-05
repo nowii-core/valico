@@ -28,7 +28,7 @@ The project relies on native browser APIs, including custom WebGL2 rendering pip
 
 ## Live Demo
 
-**Live Demo:** https://nowii-core.github.io/valico/valico/
+**Live Demo:**[https://nowii-core.github.io/valico/valico/]
 
 ## Tech Stack
 
