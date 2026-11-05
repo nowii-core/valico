@@ -26,9 +26,18 @@ The project relies on native browser APIs, including custom WebGL2 rendering pip
 * **Desktop and Mobile Support** — Built-in support for both mouse/keyboard input and touch controls.
 * **Zero Dependencies** — Built using pure native web technologies without external libraries or frameworks.
 
-## Live Demo
+---
 
-**Live Demo:**[https://nowii-core.github.io/valico/valico/]
+## Preview
+
+<p align="center">
+  <img src="v2-1-valico.png" width="49%" alt="Valico interface preview 1">
+  <img src="v2-3-valico.png" width="49%" alt="Valico interface preview 2">
+</p>
+
+> **Live Demo:** [nowii-core.github.io/valico/valico/](https://nowii-core.github.io/valico/valico/)
+
+---
 
 ## Tech Stack
 
